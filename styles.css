@@ -1,0 +1,419 @@
+:root {
+    --color1: rgb(255, 0, 170);
+    --color2: rgb(54, 0, 180);
+    --color2-hover: rgb(76, 0, 255);
+    --color3: rgb(7, 214, 0);
+    --color3-hover: rgb(9, 255, 0);
+    --text-color1: black;
+    --main-background1: white;
+    --tile-background1: #eeeeee;
+}
+
+body {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: sans-serif;
+    overflow-x: clip;
+}
+
+p {
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 .text-colored {
+    color: var(--color3);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.section-content > h2:first-of-type {
+    margin-top: 0;
+}
+
+/*BUTTONS*/
+button, input[type="submit"] {
+    border-radius: 18px;
+    border: none;
+    font-size: 18px;
+    padding: 5px;
+    padding: 8px 18px;
+    margin: 8px;
+}
+
+.btn-container {
+    cursor: default;
+}
+
+.btn-bg-transparent {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-bg-solid {
+    background-color: var(--color3);
+    color: white;
+}
+
+.btn-bg-solid:hover {
+    transition: 0.3s;
+    background-color: var(--color3-hover);
+}
+
+.btn-bg-solid:active {
+    transition: 0s;
+    background-color: white;
+    color: black;
+}
+
+.btn-bg-transparent:hover {
+    transition: 0.3s;
+    background-color: white;
+    color: black;
+}
+
+.btn-bg-transparent:active {
+    transition: 0s;
+    background-color: black;
+    color: white;
+}
+
+/*NAVBAR*/
+#menu {
+    display: none;
+    z-index: 999;
+    color: var(--text-color1);
+    font-size: 18px;
+}
+
+#navbar {
+    width: 100vw;
+    padding-top: 2px;
+    text-align: left;
+    top: 0;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+#brand {
+    display: inline-block;
+    font-size: 32px;
+    margin: 8px 18px;
+}
+
+#brand span {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    color: var(--color1);
+    font-family: Brush Script MT, sans-serif;
+    font-size: 60px;
+    line-height: 8px;
+    border-color: red;
+}
+
+#brand-name {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#navbar-links {
+    float: right;
+    vertical-align: top;
+    padding: 12px;
+    margin-right: 18px;
+    text-align: right;
+    box-sizing: border-box;
+    width: fit-content;
+    z-index: 5;
+}
+
+#navbar ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+#navbar ul li {
+    display: inline-block;
+    margin: 5px 4px;
+}
+
+#navbar ul li a {
+    transition: 0.3s;
+    border-radius: 16px;
+    padding: 5px;
+    padding: 8px 18px;
+    margin: 8px;
+    font-size: 16px;
+    padding: 8px 18px;
+    margin: 0;
+}
+
+#navbar ul li a:hover {
+    color: white !important;
+    background-color: var(--color3);
+}
+
+/*MAIN*/
+main {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: var(--main-background1);
+}
+
+main h1 {
+    color: var(--text-color1);
+    text-align: center;
+}
+
+/*WELCOME SECTION*/
+#welcome {
+    background-image: url(../../../Resources/images/downloads/images\ \(3\).jpg);
+    background-blend-mode: overlay;
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    color: white;
+    z-index: -2;
+}
+
+#welcome div:first-of-type {
+    width: 100%;
+    height: 190px;
+}
+
+#welcome div:last-of-type {
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient(transparent, var(--main-background1));
+}
+
+#welcome p:first-of-type {
+    font-size: 18px;
+}
+
+#welcome h1 {
+    color: white;
+    font-size: 42px;
+    width: 85%;
+    margin: 0 auto 8px auto;
+}
+
+#welcome p {
+    font-size: 20px;
+    width: 80%;
+    margin: 8px auto;
+}
+
+/*ABOUT SECTION*/
+#about .section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 24px;
+}
+
+#about h2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#about h3 {
+    color: var(--color1);
+}
+
+#about {
+    padding: 24px;
+    color: var(--text-color1);
+}
+
+#about ul {
+    margin: 0;
+    padding: 0;
+}
+
+#about h4 {
+    margin: 0;
+}
+
+#education, #profile, #skills {
+    margin-right: 18px;
+}
+
+.period {
+    margin-top: 0;
+    font-size: 12px;
+}
+
+#profile {
+    grid-column: 1;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#education {
+    grid-column: 2;
+    vertical-align: top;
+    display: inline-block;
+}
+
+#education h4 {
+    font-size: 18px;
+}
+
+#education ul li {
+    border-radius: 18px;
+    background-color: var(--tile-background1);
+    padding: 18px;
+    margin-bottom: 10px;
+}
+
+#skills {
+    grid-column: 3;
+    vertical-align: top;
+    display: inline-block;
+}
+
+/*PROJECTS SECTION*/
+
+.project {
+    height: fit-content;
+    color: var(--text-color1);
+    background-color: var(--tile-background1);
+    border-radius: 18px;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.project:hover {
+    box-shadow: 0 0 8px 3px grey;
+}
+
+#projects {
+    padding: 24px;
+}
+
+#projects a {
+    border-radius: 18px;
+}
+
+#projects-container {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 24px;
+}
+
+.project .images {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    border-radius: 18px 18px 0 0;
+    background: linear-gradient(30deg, grey, black);
+}
+
+.project-info {
+    padding: 18px;
+    margin: 0;
+}
+
+.project-info h2 {
+    margin: 0;
+}
+
+.project-info p {
+    margin-top: 8px;
+}
+
+/*ANIMATIONS*/
+
+/*MEDIA QUERIES*/
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+@media (max-width: 600px) {
+    /*BUTTONS*/
+
+    /*NAVBAR*/
+    #navbar-links {
+        min-width: 200px;
+        vertical-align: unset;
+        text-align: unset;
+        background-color: rgba(255, 255, 255, 80%);
+        backdrop-filter: blur(0.25rem);
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0; 
+        transition: 0.5s;
+        z-index: 998;
+    }
+
+    #navbar-links[data-visible="false"] {
+        transform: translateX(100%);
+    }
+
+    #navbar-links[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    #navbar ul li {
+        display: block;
+        margin: 32px 10px;
+    }
+
+    #navbar ul {
+        display: block;
+        margin-top: 60px;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 40px;
+    }
+
+    /*WELCOME SECTION*/
+
+}
