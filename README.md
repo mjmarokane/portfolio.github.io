@@ -24,7 +24,7 @@ Welcome to the repository for my personal portfolio website! This project is cur
 
 ## Timeline
 
-- **Target Completion:** June 31, 2024
+- **Target Completion:** September 31, 2024
 
 ## Disclaimer
 
