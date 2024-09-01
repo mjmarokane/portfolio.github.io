@@ -1,3 +1,4 @@
+
 :root {
     --color1: rgb(255, 0, 170);
     --color2: rgb(54, 0, 180);
@@ -338,7 +339,7 @@ main h1 {
     display: grid;
     gap: 18px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     margin: 24px;
 }
 
