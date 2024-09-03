@@ -3,6 +3,8 @@ const nav = document.getElementById("navbar-links");
 const brandName = document.getElementById("brand-name");
 const navbarLinks = document.getElementsByClassName("navbar-link");
 const menuToggle = document.getElementById("menu");
+const seeCVBtn = document.getElementById("see-cv-btn");
+const letsTalkBtn = document.getElementById("lets-talk-btn");
 
 /*
  *Entry point of the script
@@ -65,6 +67,22 @@ menuToggle.addEventListener("click", () => {
     }
     else {
         nav.setAttribute("data-visible", "false");
+    }
+});
+
+/*
+ * On click event handler for the let's talk (contact) button
+ */
+letsTalkBtn.addEventListener("click", () => {
+    const target = document.getElementById("contacts");
+
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (prefersReducedMotion)   
+   {
+      target.scrollIntoView(); // Instant scroll
+    } else {
+      target.scrollIntoView({ behavior: "smooth" }); // Smooth scroll
     }
 });
 
